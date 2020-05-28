@@ -52,9 +52,9 @@ The parameters are set as follows:
 
 For details about *model*, see [this paper][1] in page 3.
 
-## Output
+## Output
 
-The graph is written on the standard output following this format
+The graph is written on the standard output following this format (filename will be appended with _IC, _WC, _TV or _Rnd) with a '.inf' extension.
 
     node1 <TAB> node2 <TAB> weight
 
