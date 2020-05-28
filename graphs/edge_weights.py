@@ -23,7 +23,7 @@ def load_reversed_graph(graph):
 
 def constant_ic(graph, p):
     fn = os.path.splitext(path_leaf(graph))[0]
-    f = open(fn+"_IC.txt","w+")
+    f = open(fn+"_IC.inf","w+")
     with open(graph, 'r') as fin:
         for l in fin:
             u1, u2 = map(int, l.rstrip().split()[:2])
@@ -33,7 +33,7 @@ def constant_ic(graph, p):
 def weighted_cascade(graph):
     G = load_reversed_graph(graph)
     fn = os.path.splitext(path_leaf(graph))[0]
-    f = open(fn+"_WC.txt","w+")
+    f = open(fn+"_WC.inf","w+")
     for u2 in G:
         for u1 in G[u2]:
             f.write("%d\t%d\t%.3g\n" % (u1, u2, 1. / len(G[u2])))
@@ -41,7 +41,7 @@ def weighted_cascade(graph):
 
 def tri_valency_ic(graph, p):
     fn = os.path.splitext(path_leaf(graph))[0]
-    f = open(fn+"_TV.txt","w+")
+    f = open(fn+"_TV.inf","w+")
     with open(graph, 'r') as fin:
         for l in fin:
             u1, u2 = map(int, l.rstrip().split()[:2])
@@ -55,7 +55,7 @@ def uniform_lt(graph):
 def random_lt(graph):
     G = load_reversed_graph(graph)
     fn = os.path.splitext(path_leaf(graph))[0]
-    f = open(fn+"_Rnd.txt","w+")
+    f = open(fn+"_Rnd.inf","w+")
     for u2 in G:
         indegree = len(G[u2])
         weights = [random.random() for a in xrange(indegree)]
