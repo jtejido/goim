@@ -1,5 +1,5 @@
 This folder contains Python scripts to clean graphs and generate weights in
-the desired format.
+the desired format. Some graphs from [SNAP][1] are included here.
 
 # Clean graph
 
@@ -50,12 +50,17 @@ The parameters are set as follows:
   **4** Random.
 * *p_i* probability for constant weights (for model **0** and **2**).
 
-For details about *model*, see [this paper][1] in page 3.
+For details about *model*, see [this paper][2] and [this paper][3].
 
 ## Output
 
-The graph is written on the standard output following this format (filename will be appended with _IC, _WC, _TV or _Rnd) with a '.inf' extension.
+The graph is written on the standard output following this format (filename will be appended with _IC, _WC, _TV or _R) with a '.inf' extension.
 
     node1 <TAB> node2 <TAB> weight
 
-[1]: <http://people.cs.umass.edu/~sainyam/papers/SIGMOD17_im_benchmarking.pdf> "A. Arora, S. Galhotra, S. Ranu. Debunking the Myths of Influence Maximization: An In-Depth Benchmarking study. SIGMOD 2017"
+
+[1]: <https://snap.stanford.edu/data/index.html> "Stanford Large Network Dataset Collection"
+
+[2]: <https://ink.library.smu.edu.sg/sis_research/3981/> "Y. Li, Y. Wang, K. Tan. Influence Maximization on Social Graphs: A Survey. IEEE Transactions on Knowledge and Data Engineering 2018."
+
+[2]: <http://people.cs.umass.edu/~sainyam/papers/SIGMOD17_im_benchmarking.pdf> "A. Arora, S. Galhotra, S. Ranu. Debunking the Myths of Influence Maximization: An In-Depth Benchmarking study. SIGMOD 2017"

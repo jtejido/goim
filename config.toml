@@ -1,0 +1,25 @@
+# (DO NOT MOVE)
+
+# Where the output log will be saved
+outputDir 					= "output"
+
+# Where the graph file is located
+graphPath 					= "graphs/hep_IC_0.1.inf"
+
+# This is the number of rounds (campaigns or trials) for seed generation.
+trials 						= 1
+
+# The seed-selection algorithm used.
+algorithm 					= "pmc" # "celf/tim/maxdegree/discountdegree/pmc" (caps irrelevant)
+
+# k-nodes that holds promising influence.
+seeds 						= 25
+
+
+model 						= "ic" # "IC/LT" (caps irrelevant)
+
+# Number of simulations to be used by CELF, in literature, this is usually set to 10k.
+simulations 				= 10000
+
+# Seed that will be used for random number generation.
+seed 						= 1487723611282

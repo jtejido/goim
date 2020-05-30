@@ -55,7 +55,7 @@ def uniform_lt(graph):
 def random_lt(graph):
     G = load_reversed_graph(graph)
     fn = os.path.splitext(path_leaf(graph))[0]
-    f = open(fn+"_Rnd.inf","w+")
+    f = open(fn+"_R.inf","w+")
     for u2 in G:
         indegree = len(G[u2])
         weights = [random.random() for a in xrange(indegree)]
