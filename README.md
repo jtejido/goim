@@ -43,12 +43,38 @@ find a seed set 𝑆 (or people) of at most 𝑘-nodes (number of people) such t
 1. Who are the most effective at influencing others with fake news.
 2. Effective Election campaigns.
 3. Viral Spread.
-4. Others described [here][4]
+4. Others described [here][4].
 
 
 ## Parameters
 
-See the **config.toml** file for each parameters needed to run the program.
+See the **config.toml** file for parameter options needed to run the evaluator or run ./goim -h for help.
+
+```bash
+$ ./goim -h
+Usage of C:\go_dev\src\github.com\jtejido\goim\goim.exe:
+  -algorithm string
+        Seed-selection algorithm. (default "pmc")
+  -conf string
+        config file location (default "config.toml")
+  -cpuprofile string
+        write cpu profile to location
+  -graph string
+        Path of graph file. (default "graphs/hep_IC_0.1.inf")
+  -log string
+        write log to location
+  -model string
+        Diffusion model to use. (default "ic")
+  -output string
+        Path for output files. (default "output")
+  -seed int
+        Seed of rng. (default 1487723611282)
+  -seeds int
+        Number of seeds in each trial. (default 25)
+  -trials int
+        Number of trials. (default 1)
+```
+
 
 [1]: <http://snap.stanford.edu/class/cs224w-readings/goyal11celf.pdf> "A. Goyal, W. Lu, L. Lakshmanan. CELF++: Optimizing the Greedy Algorithm for Influence Maximization in Social Networks. WWW 2011"
 
