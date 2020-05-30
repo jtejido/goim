@@ -1,5 +1,5 @@
 # goim
-Online Influence Maximization in Go ([CELF][2], [TIM][3], MaxDiscount, DegreeDiscount, Pruned Monte-Carlo)
+Influence Maximization in Go ([CELF][1], [TIM][2], MaxDiscount, DegreeDiscount, Pruned Monte-Carlo)
 
 ## Objective
 
@@ -24,7 +24,7 @@ The increasing popularity of online social networks provides a good tool to enab
 The problem of exhausting or extracting people who can maximize revenue by promoting newly-launched 
 products to his/her connections (peers, relative, friends, followers, etc.) is the main goal.
 
-**Influence Maximization** is *[NP-hard][5]*.
+**Influence Maximization** is *[NP-hard][3]*.
 
 It turns out that the deterministic influence maximization problem is NP-hard.
 
@@ -43,21 +43,17 @@ find a seed set 𝑆 (or people) of at most 𝑘-nodes (number of people) such t
 1. Who are the most effective at influencing others with fake news.
 2. Effective Election campaigns.
 3. Viral Spread.
-4. Others described [here][6]
+4. Others described [here][4]
 
 
 ## Parameters
 
 See the **config.toml** file for each parameters needed to run the program.
 
-[1]: <http://arxiv.org/pdf/1506.01188v1.pdf> "S. Lei, S. Maniu, L. Mo, R. Cheng, P. Senellart. Online Influence Maximization. KDD 2015"
+[1]: <http://snap.stanford.edu/class/cs224w-readings/goyal11celf.pdf> "A. Goyal, W. Lu, L. Lakshmanan. CELF++: Optimizing the Greedy Algorithm for Influence Maximization in Social Networks. WWW 2011"
 
-[2]: <http://snap.stanford.edu/class/cs224w-readings/goyal11celf.pdf> "A. Goyal, W. Lu, L. Lakshmanan. CELF++: Optimizing the Greedy Algorithm for Influence Maximization in Social Networks. WWW 2011"
+[2]: <http://arxiv.org/pdf/1404.0900v2.pdf> "Y. Tang, X. Xiao, and Y. Shi. Influence maximization: Near-optimal time complexity meets practical efficiency. SIGMOD 2014"
 
-[3]: <http://arxiv.org/pdf/1404.0900v2.pdf> "Y. Tang, X. Xiao, and Y. Shi. Influence maximization: Near-optimal time complexity meets practical efficiency. SIGMOD 2014"
+[3]: <https://www.cs.cornell.edu/home/kleinber/kdd03-inf.pdf> "D. Kempe, J. Kleinberg, E. Tardos. Maximizing the Spread of Influence through a Social Network."
 
-[4]: <http://arxiv.org/pdf/1702.05354.pdf> "P. Lagrée, O. Cappé, B. Cautis, S. Maniu. Online Model-Free Influence Maximization with Persistence."
-
-[5]: <https://www.cs.cornell.edu/home/kleinber/kdd03-inf.pdf> "D. Kempe, J. Kleinberg, E. Tardos. Maximizing the Spread of Influence through a Social Network."
-
-[6]: <https://dl.acm.org/doi/pdf/10.1145/2503792.2503797> "A. Guille, H. Hacid, C. Favre, and D. A. Zighed, Information diffusion in online social networks: A survey. SIGMOD 2013."
+[4]: <https://dl.acm.org/doi/pdf/10.1145/2503792.2503797> "A. Guille, H. Hacid, C. Favre, and D. A. Zighed, Information diffusion in online social networks: A survey. SIGMOD 2013."
