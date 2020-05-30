@@ -52,7 +52,6 @@ See the **config.toml** file for parameter options needed to run the evaluator o
 
 ```bash
 $ ./goim -h
-Usage of C:\go_dev\src\github.com\jtejido\goim\goim.exe:
   -algorithm string
         Seed-selection algorithm. (default "pmc")
   -conf string
