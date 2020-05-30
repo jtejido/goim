@@ -72,6 +72,8 @@ func NewGraph(graphFilePath string) (g *Graph, err error) {
 		if err != nil {
 			return nil, err
 		}
+
+		// TO-DO. internal ID that always starts with 0.
 		nu := Node(u)
 		nv := Node(v)
 		numEdges++
