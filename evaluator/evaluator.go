@@ -2,12 +2,13 @@ package evaluator
 
 import (
 	"bufio"
-	"github.com/jtejido/goim/algorithm"
-	"github.com/jtejido/goim/model"
-	"github.com/jtejido/goim/util"
-	"github.com/jtejido/set"
 	"log"
 	"time"
+
+	"github.com/uhini0201/goim/algorithm"
+	"github.com/uhini0201/goim/model"
+	"github.com/uhini0201/goim/util"
+	"github.com/uhini0201/set"
 )
 
 const (

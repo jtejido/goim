@@ -4,7 +4,7 @@
 package util
 
 import (
-	"github.com/lucky-se7en/grand"
+	"github.com/uhini0201/grand"
 )
 
 type Weighted struct {

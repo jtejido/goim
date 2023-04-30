@@ -1,8 +1,8 @@
 package algorithm
 
 import (
-	"github.com/jtejido/goim/util"
-	"github.com/jtejido/set"
+	"github.com/uhini0201/goim/util"
+	"github.com/uhini0201/set"
 )
 
 type discountDegreeNode struct {

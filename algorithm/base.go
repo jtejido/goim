@@ -1,7 +1,7 @@
 package algorithm
 
 import (
-	"github.com/jtejido/set"
+	"github.com/uhini0201/set"
 )
 
 type Algorithm interface {
