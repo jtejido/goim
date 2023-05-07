@@ -58,19 +58,19 @@ def random_lt(graph):
     f = open(fn+"_R.inf","w+")
     for u2 in G:
         indegree = len(G[u2])
-        weights = [random.random() for a in xrange(indegree)]
+        weights = [random.random() for a in range(indegree)]
         weights = [w / sum(weights) for w in weights]
-        for i in xrange(indegree):
+        for i in range(indegree):
             f.write("%d\t%d\t%.3g\n" % (G[u2][i], u2, weights[i]))
     f.close()
 
 if __name__ == '__main__':
     if len(sys.argv) < 3:
-        print 'Usage: python edge_weights.py <graph> <model> [<p1> <p2> ...]'
+        print("Usage: python edge_weights.py <graph> <model> [<p1> <p2> ...]")
         sys.exit(1)
     graph = sys.argv[1]
     model = int(sys.argv[2])
-    p = map(float, sys.argv[3:])
+    p = list(map(float, sys.argv[3:]))
     if model == 0:
         constant_ic(graph, p[0])
     elif model == 1:

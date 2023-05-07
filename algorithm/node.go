@@ -1,7 +1,7 @@
 package algorithm
 
 import (
-	"github.com/jtejido/goim/util"
+	"github.com/uhini0201/goim/util"
 )
 
 type Node struct {

@@ -3,11 +3,12 @@ package main
 import (
 	"bufio"
 	"flag"
-	"github.com/jtejido/goim/evaluator"
-	"github.com/jtejido/goim/util"
 	"log"
 	"os"
 	"runtime/pprof"
+
+	"github.com/uhini0201/goim/evaluator"
+	"github.com/uhini0201/goim/util"
 )
 
 var (

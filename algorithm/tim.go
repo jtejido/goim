@@ -1,12 +1,13 @@
 package algorithm
 
 import (
-	"github.com/jtejido/goim/model"
-	"github.com/jtejido/goim/util"
-	"github.com/jtejido/set"
-	"github.com/lucky-se7en/grand"
-	"github.com/lucky-se7en/grand/source64"
 	"math"
+
+	"github.com/uhini0201/goim/model"
+	"github.com/uhini0201/goim/util"
+	"github.com/uhini0201/grand"
+	"github.com/uhini0201/grand/source64"
+	"github.com/uhini0201/set"
 )
 
 const (

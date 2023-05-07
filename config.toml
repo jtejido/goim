@@ -4,22 +4,22 @@
 outputDir 					= "output"
 
 # Where the graph file is located
-graphPath 					= "graphs/hep_IC_0.1.inf"
+graphPath 					= "graphs/twitter_combined_WC.inf"
 
 # This is the number of rounds (campaigns or trials) for seed generation.
-trials 						= 1
+trials 						= 15
 
 # The seed-selection algorithm used.
-algorithm 					= "pmc" # "celf/tim/maxdegree/discountdegree/pmc" (caps irrelevant)
+algorithm 					= "discountdegree" # "celf/tim/maxdegree/discountdegree/pmc" (caps irrelevant)
 
 # k-nodes that holds promising influence.
-seeds 						= 25
+seeds 						= 50
 
 
 model 						= "ic" # "IC/LT" (caps irrelevant)
 
 # Number of simulations to be used by CELF, in literature, this is usually set to 10k.
-simulations 				= 10000
+simulations 				= 1000
 
 # Seed that will be used for random number generation.
 seed 						= 1487723611282

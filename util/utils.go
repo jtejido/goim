@@ -3,8 +3,9 @@ package util
 import (
 	"bufio"
 	"fmt"
-	"github.com/jtejido/set"
 	"math"
+
+	"github.com/uhini0201/set"
 )
 
 func LogSeed(round, activated int, roundtime, timetotal float64, seeds set.Set, config *Config, bufferedWriter *bufio.Writer) {

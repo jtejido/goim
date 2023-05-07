@@ -65,14 +65,14 @@ def write_cleaned_graph(graph, giant):
                 new_mapping[u2] = n
                 n += 1
             m += 1
-            print '%d\t%d' % (new_mapping[u1], new_mapping[u2])
+            print("%d\t%d" % (new_mapping[u1], new_mapping[u2]))
             f.write("%d\t%d\n" % (new_mapping[u1], new_mapping[u2]))
     f.close()
     sys.stderr.write('%d nodes, %d edges' % (n, m))
 
 if __name__ == '__main__':
     if len(sys.argv) < 2:
-        print 'Usage: python clean_graph.py <graph> [<directed>]'
+        print("Usage: python clean_graph.py <graph> [<directed>]")
         sys.exit(1)
     if len(sys.argv) >= 3:
         directed = (int(sys.argv[2]) == 1)

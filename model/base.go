@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/jtejido/set"
+	"github.com/uhini0201/set"
 )
 
 type Model interface {
